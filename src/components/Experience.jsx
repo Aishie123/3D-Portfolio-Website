@@ -73,7 +73,7 @@ const ExperienceCard = ({ experience }) => {
 const buttonGroupVariants = {
   hidden: { opacity: 0, scale: 0.9 },
   visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
-  hover: { scale: 1.05, transition: { duration: 0.2 } },
+  hover: { x: 30, scale: 1.05, transition: { duration: 0.2 } },
 };
 
 const Experience = () => {
@@ -94,19 +94,19 @@ const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()} animate="visible">
-        <p className={`${styles.sectionSubText} text-center`}>
+        <p className={`${styles.sectionSubText}`}>
           What I have done so far
         </p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
+        <h2 className={`${styles.sectionHeadText}`}>
           {selectedTab === "work"
-            ? "Work Experience"
+            ? "Work Experience."
             : selectedTab === "education"
-            ? "Educational Attainment"
-            : "Other Affiliations"}
+            ? "Educational Attainment."
+            : "Other Affiliations."}
         </h2>
       </motion.div>
 
-      <div className="mt-5 flex flex-col items-center">
+      <div className="mt-5 flex flex-col">
         <motion.div
           className="mb-10"
           variants={buttonGroupVariants}
