@@ -19,7 +19,7 @@ const Computers = ({ isMobile }) => {
       modelRef.current.rotation.y = Math.sin(autoRotateRef.current.time) * 0.3 - 0.2;
       
       // MODIFY THIS LINE to adjust the baseline position during animation
-      modelRef.current.position.y = Math.sin(autoRotateRef.current.time * 0.5) * 0.05 - 3; // Lowered position from -2.25 to -2.75
+      modelRef.current.position.y = Math.sin(autoRotateRef.current.time * 0.5) * 0.05 - 2; // Lowered position from -2.25 to -2.75
     }
   });
 
