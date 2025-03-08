@@ -19,7 +19,7 @@ const Computers = ({ isMobile }) => {
       modelRef.current.rotation.y = Math.sin(autoRotateRef.current.time) * 0.3 - 0.2;
       
       // MODIFY THIS LINE to adjust the baseline position during animation
-      modelRef.current.position.y = Math.sin(autoRotateRef.current.time * 0.5) * 0.05 - 2; // Lowered position from -2.25 to -2.75
+      modelRef.current.position.y = Math.sin(autoRotateRef.current.time * 0.5) * 0.05 - (isMobile ? 2 : 3); // Adjusted position based on isMobile
     }
   });
 
@@ -59,7 +59,7 @@ const Computers = ({ isMobile }) => {
       <group 
         ref={modelRef}
         // MODIFY THESE LINES to adjust the initial position of the model
-        position={isMobile ? [0, -1, -2.2] : [0, -2.75, -1.5]} // Lowered position from -2.25 to -2.75
+        position={isMobile ? [0, -1, -2] : [0, -2.75, -1.5]} // Lowered position from -2.25 to -2.75
         scale={isMobile ? 0.6 : 0.7} // Current scale
         rotation={[-0.01, -0.2, -0.1]}
       >
