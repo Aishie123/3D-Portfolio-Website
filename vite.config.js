@@ -12,5 +12,6 @@ export default defineConfig({
     alias: {
       three: 'three' // Ensure Vite knows where to resolve "three"
     }
-  }
+  },
+  assetsInclude: ["**/*.JPEG"]
 })

@@ -7,10 +7,9 @@ import Button from "@mui/material/Button";
 import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "../styles";
-import { workExperiences, educationExperiences, volunteeringExperiences } from "../constants";
+import { workExperiences, educationExperiences, volunteeringExperiences, certifications } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -26,7 +25,7 @@ const ExperienceCard = ({ experience }) => {
         <div className='flex justify-center items-center w-full h-full'>
           <img
             src={experience.icon}
-            alt={experience.company_name || experience.school_name}
+            alt={experience.company_name || experience.school_name || experience.organization}
             className='w-[60%] h-[60%] object-contain'
           />
         </div>
@@ -37,7 +36,7 @@ const ExperienceCard = ({ experience }) => {
           {experience.title || experience.degree}
         </h3>
         <p className='text-secondary text-[16px] font-semibold' style={{ margin: 0 }}>
-          {experience.company_name || experience.school_name}
+          {experience.company_name || experience.school_name || experience.organization}
         </p>
         {experience.location && (
           <p className='text-secondary text-[14px]' style={{ margin: 0 }}>
@@ -55,20 +54,10 @@ const ExperienceCard = ({ experience }) => {
             {point}
           </li>
         ))}
-        {experience.achievements && experience.achievements.map((achievement, index) => (
-          <li
-            key={`education-achievement-${index}`}
-            className='text-white-100 text-[14px] pl-1 tracking-wider'
-          >
-            {achievement}
-          </li>
-        ))}
       </ul>
     </VerticalTimelineElement>
   );
 };
-
-
 
 const buttonGroupVariants = {
   hidden: { opacity: 0, scale: 0.9 },
@@ -85,6 +74,8 @@ const Experience = () => {
         return educationExperiences;
       case "volunteering":
         return volunteeringExperiences;
+      case "certifications":
+        return certifications;
       case "work":
       default:
         return workExperiences;
@@ -102,6 +93,8 @@ const Experience = () => {
             ? "Work Experience."
             : selectedTab === "education"
             ? "Educational Attainment."
+            : selectedTab === "certifications"
+            ? "Certifications."
             : "Other Affiliations."}
         </h2>
       </motion.div>
@@ -119,32 +112,38 @@ const Experience = () => {
             aria-label="Experience type"
             sx={{
               "& .MuiButton-root": {
-                borderColor: "#FFFFFF", // Button border color
-                fontFamily: "'Poppins', sans-serif", // Ensure font matches
+                borderColor: "#FFFFFF",
+                fontFamily: "'Poppins', sans-serif",
               },
               "& .MuiButtonGroup-grouped:not(:first-of-type)": {
-                borderColor: "#FFFFFF", // Line between buttons
+                borderColor: "#FFFFFF",
               },
               "& .MuiButtonGroup-grouped:not(:last-of-type)": {
-                borderRight: `2px solid #FFFFFF`, // Line between buttons
+                borderRight: `2px solid #FFFFFF`,
               },
             }}
           >
             <Button
               onClick={() => setSelectedTab("work")}
-              sx={{ color: selectedTab === "work" ? "#915EFF" : "inherit", borderColor: selectedTab === "work" ? "#915EFF" : "inherit" }}
+              sx={{ color: selectedTab === "work" ? "#915EFF" : "inherit" }}
             >
               Work
             </Button>
             <Button
               onClick={() => setSelectedTab("education")}
-              sx={{ color: selectedTab === "education" ? "#915EFF" : "inherit", borderColor: selectedTab === "education" ? "#915EFF" : "inherit" }}
+              sx={{ color: selectedTab === "education" ? "#915EFF" : "inherit" }}
             >
               Education
             </Button>
             <Button
+              onClick={() => setSelectedTab("certifications")}
+              sx={{ color: selectedTab === "certifications" ? "#915EFF" : "inherit" }}
+            >
+              Certifications
+            </Button>
+            <Button
               onClick={() => setSelectedTab("volunteering")}
-              sx={{ color: selectedTab === "volunteering" ? "#915EFF" : "inherit", borderColor: selectedTab === "volunteering" ? "#915EFF" : "inherit" }}
+              sx={{ color: selectedTab === "volunteering" ? "#915EFF" : "inherit" }}
             >
               Other
             </Button>

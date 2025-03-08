@@ -10,9 +10,6 @@ import {
   tailwind,
   git,
   figma,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
   flutter,
   firebase,
@@ -43,6 +40,15 @@ import {
   nocode,
   ssc,
   wtm,
+  akp_web,
+  baylo,
+  calculator,
+  employeetracker,
+  metanoia,
+  nozomi,
+  pocketforest,
+  socmed,
+  solarsystem
 } from "../assets";
 
 export const navLinks = [
@@ -80,6 +86,61 @@ const services = [
 ];
 
 const technologies = [
+  {
+    name: "Flutter",
+    icon: flutter,
+  },
+  {
+    name: "Firebase",
+    icon: firebase,
+  },
+  {
+    name: "Figma",
+    icon: figma,
+  },
+  {
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
+  },
+  {
+    name: "JavaScript",
+    icon: javascript,
+  },
+  {
+    name: "React JS",
+    icon: reactjs,
+  },
+  {
+    name: "Arduino",
+    icon: arduino,
+  },
+  {
+    name: "Unity",
+    icon: unity,
+  },
+  {
+    name: "Java",
+    icon: java,
+  },
+  {
+    name: "Python",
+    icon: python,
+  }, 
+  {
+    name: "C++",
+    icon: cplus,
+  }, 
+  {
+    name: "PHP",
+    icon: php,
+  },
+];
+
+const certifications = [
   {
     name: "Flutter",
     icon: flutter,
@@ -352,68 +413,209 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Asia Kakehashi Project Philippines Website",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A concept website developed for Asia Kakehashi Project Philippines. \
+      Asia Kakehashi Project+ is a full scholarship funded by the Ministry\
+      of Education, Culture, Sports, Science and Technology (MEXT) to build\
+      bridges between high school students in Japan and in Asia.",
     tags: [
       {
-        name: "react",
+        name: "html",
         color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
       },
       {
         name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: akp_web,
+    source_code_link: "https://aishie123.github.io/AKP-PH",
+  },
+  {
+    name: "Metanoia: Breaking Chains of Despair",
+    description:
+      "Metanoia is a 2D pixel-art dungeon crawler & shooter game made with Unity.\
+      The game delves into the theme of overcoming adversity and finding\
+      inner strength through a symbolic journey within the mind of\
+      the protagonist.",
+    tags: [
+      {
+        name: "unity",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "c#",
+        color: "green-text-gradient",
+      },
+      {
+        name: "astar-search",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: metanoia,
+    source_code_link: "https://aishie918.itch.io/metanoia",
+  },
+  {
+    name: "Pocket Forest (Prototype)",
+    description:
+      "Pocket Forest is an eco-conscious mobile game where players nurture\
+      and grow a virtual forest of trees, promoting environmental conservation\
+      and community engagement in a pocket-sized world.",
+    tags: [
+      {
+        name: "ui-ux",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "figma",
+        color: "green-text-gradient",
+      },
+      {
+        name: "canva",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: pocketforest,
+    source_code_link: "https://bit.ly/PocketForestPrototype",
+  },
+  {
+    name: "Social Media Content",
+    description:
+      "Designed publication materials for the Facebook and Instagram accounts of\
+      the Asia Kakehashi Project Philippines Alumni from 2021 to 2023",
+    tags: [
+      {
+        name: "photoshop",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "illustrator",
+        color: "green-text-gradient",
+      },
+      {
+        name: "canva",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: socmed,
+    source_code_link: "https://instagram.com/asiakakehashiprojectph",
+  },
+  {
+    name: "Employee Attendance Monitoring System",
+    description:
+      "The Employee Attendance Monitoring System is a software application that\
+      aims to automate the process of managing employee attendance, specifically\
+      designed for an electronics hypermarket, Home Electronics. ",
+    tags: [
+      {
+        name: "java",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "scenebuilder",
+        color: "green-text-gradient",
+      },
+      {
+        name: "canva",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: employeetracker,
+    source_code_link: "https://github.com/Aishie123/Employee-Attendance-Monitoring-System",
+  },
+  {
+    name: "3D Solar System Simulation",
+    description:
+      "A simple Solar System simulation project made with Unity 3D.",
+    tags: [
+      {
+        name: "unity",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "c#",
+        color: "green-text-gradient",
+      },
+      {
+        name: "canva",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: solarsystem,
+    source_code_link: "https://aishie918.itch.io/solar-system-simulation",
+  },
+  {
+    name: "Baylo: A Barter Trading App for Dabawenyos (Prototype)",
+    description:
+      "Baylo ('Exchange' in Cebuano) is an app made for Barter trading (with Google Maps implementation).\
+      It allows users to get a product in exchange with another item, instead of money.",
+    tags: [
+      {
+        name: "android-studio",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "java",
+        color: "green-text-gradient",
+      },
+      {
+        name: "xml",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: baylo,
+    source_code_link: "https://github.com/Aishie123/Baylo",
+  },
+  {
+    name: "Nozomi: A Turn-Based RPG",
+    description:
+      "Nozomi ('Hope' in Japanese) is a turn-based role-playing game made with Android Studio.\
+      It aims to motivate players to overcome whatever problem or worry they have.",
+    tags: [
+      {
+        name: "android-studio",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "java",
+        color: "green-text-gradient",
+      },
+      {
+        name: "xml",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: nozomi,
+    source_code_link: "https://github.com/Aishie123/Nozomi",
+  },
+  {
+    name: "Smart Calculator",
+    description:
+      "Smart Calculator is an app made with Android Studio.\
+      It calculates the area, perimeter and volume of different geometric figures and shapes.\
+      It also various solves physics problems, such as ideal gas equation.",
+    tags: [
+      {
+        name: "android-studio",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "java",
+        color: "green-text-gradient",
+      },
+      {
+        name: "xml",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: calculator,
+    source_code_link: "https://github.com/Aishie123/Smart-Calculator",
   },
 ];
 
-export { services, technologies, workExperiences, educationExperiences, volunteeringExperiences, testimonials, projects };
+export { services, technologies, workExperiences, educationExperiences, volunteeringExperiences, testimonials, projects, certifications };

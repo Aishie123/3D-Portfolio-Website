@@ -14,7 +14,7 @@ import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 //import mongodb from "./tech/mongodb.png";
-//import nodejs from "./tech/nodejs.png";
+import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 //import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
@@ -53,9 +53,15 @@ import nocode from "./organization/nocode.png";
 import ssc from "./organization/ssc.png";
 import wtm from "./organization/wtm.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import akp_web from "./portfolio/akp.png";
+import baylo from "./portfolio/baylo.png";
+import calculator from "./portfolio/calculator.jpeg";
+import employeetracker from "./portfolio/employeetracker.png";
+import metanoia from "./portfolio/metanoia.png";
+import nozomi from "./portfolio/nozomi.jpeg";
+import pocketforest from "./portfolio/pocketforest.gif";
+import socmed from "./portfolio/socmed.jpeg";
+import solarsystem from "./portfolio/solarsystem.png";
 
 export {
   logo,
@@ -74,9 +80,6 @@ export {
   reactjs,
   tailwind,
   threejs,
-  carrent,
-  jobit,
-  tripguide,
   flutter,
   firebase,
   android,
@@ -106,4 +109,13 @@ export {
   nocode,
   ssc,
   wtm,
+  akp_web,
+  baylo,
+  calculator,
+  employeetracker,
+  metanoia,
+  nozomi,
+  pocketforest,
+  socmed,
+  solarsystem,
 };
