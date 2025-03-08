@@ -55,12 +55,12 @@ import wtm from "./organization/wtm.png";
 
 import akp_web from "./portfolio/akp.png";
 import baylo from "./portfolio/baylo.png";
-import calculator from "./portfolio/calculator.jpeg";
+import calculator from "./portfolio/calculator.JPEG";
 import employeetracker from "./portfolio/employeetracker.png";
 import metanoia from "./portfolio/metanoia.png";
-import nozomi from "./portfolio/nozomi.jpeg";
+import nozomi from "./portfolio/nozomi.JPEG";
 import pocketforest from "./portfolio/pocketforest.gif";
-import socmed from "./portfolio/socmed.jpeg";
+import socmed from "./portfolio/socmed.JPEG";
 import solarsystem from "./portfolio/solarsystem.png";
 
 export {
