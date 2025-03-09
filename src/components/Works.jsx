@@ -9,11 +9,11 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
   return (
-    <motion.div 
-      variants={fadeIn("up", "spring", index * 0.5, 1.5)} 
-      initial="hidden" 
-      whileInView="show" 
-      viewport={{ once: true, amount: 0.2 }} // ✅ Show once, never hide
+    <motion.div
+      variants={fadeIn("up", "spring", 0.5 * (index % 3), 1.5)}
+      initial={index < 3 ? "show" : "hidden"} // First row loads instantly, others fade in
+      whileInView="show"
+      viewport={{ once: true, amount: 0.2 }} // Triggers animation row by row
       className="flex flex-col h-full"
     >
       <Tilt
@@ -61,12 +61,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
 
 const Works = () => {
   return (
-    <motion.div 
-      initial="hidden" 
-      whileInView="show" 
-      viewport={{ once: true, amount: 0.2 }} // ✅ Show once, never hide again
-      className="relative z-0"
-    >
+    <motion.div initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.2 }} className="relative z-0">
       <div className={`${styles.padding} max-w-7xl mx-auto`}>
         <motion.div variants={textVariant()}>
           <p className={`${styles.sectionSubText}`}>My work</p>
@@ -78,7 +73,7 @@ const Works = () => {
             variants={fadeIn("", "", 0.1, 1.5)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: true, amount: 0.2 }} // ✅ Show once, never hide again
+            viewport={{ once: true, amount: 0.2 }}
             className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
           >
             The following projects showcase my skills and experience through real-world examples of my work.
