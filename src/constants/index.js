@@ -48,7 +48,8 @@ import {
   nozomi,
   pocketforest,
   socmed,
-  solarsystem
+  solarsystem,
+  linkedin
 } from "../assets";
 
 export const navLinks = [
@@ -142,56 +143,25 @@ const technologies = [
 
 const certifications = [
   {
-    name: "Flutter",
-    icon: flutter,
+    title: "Agile Software Development: Clean Coding Practices",
+    company_name: "LinkedIn Learning",
+    icon: linkedin,
+    iconBg: "#E6DEDD",
+    date: "March 4, 2025",
   },
   {
-    name: "Firebase",
-    icon: firebase,
+    title: "Agile Software Development: Refactoring",
+    company_name: "LinkedIn Learning",
+    icon: linkedin,
+    iconBg: "#E6DEDD",
+    date: "March 4, 2025",
   },
   {
-    name: "Figma",
-    icon: figma,
-  },
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Arduino",
-    icon: arduino,
-  },
-  {
-    name: "Unity",
-    icon: unity,
-  },
-  {
-    name: "Java",
-    icon: java,
-  },
-  {
-    name: "Python",
-    icon: python,
-  }, 
-  {
-    name: "C++",
-    icon: cplus,
-  }, 
-  {
-    name: "PHP",
-    icon: php,
+    title: "Understanding the Impact of a Merger for IT Teams",
+    company_name: "LinkedIn Learning",
+    icon: linkedin,
+    iconBg: "#E6DEDD",
+    date: "March 4, 2025",
   },
 ];
 
@@ -449,7 +419,7 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "c#",
+        name: "c-sharp",
         color: "green-text-gradient",
       },
       {
@@ -538,7 +508,7 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "c#",
+        name: "c-sharp",
         color: "green-text-gradient",
       },
       {

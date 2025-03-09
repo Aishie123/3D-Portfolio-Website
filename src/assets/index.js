@@ -63,6 +63,8 @@ import pocketforest from "./portfolio/pocketforest.gif";
 import socmed from "./portfolio/socmed.JPEG";
 import solarsystem from "./portfolio/solarsystem.png";
 
+import linkedin from "./tech/linkedin.png";
+
 export {
   logo,
   backend,
@@ -118,4 +120,5 @@ export {
   pocketforest,
   socmed,
   solarsystem,
+  linkedin,
 };
