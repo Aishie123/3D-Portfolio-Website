@@ -19,6 +19,10 @@ import reactjs from "./tech/reactjs.png";
 //import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 //import typescript from "./tech/typescript.png";
+import insta from "./tech/insta.png";
+import itchio from "./tech/itch-io.png";
+import roboflow from "./tech/roboflow.svg";
+import canva from "./tech/canva.svg";
 import threejs from "./tech/threejs.svg";
 import flutter from "./tech/flutter.svg";
 import firebase from "./tech/firebase.png";
@@ -78,6 +82,10 @@ export {
   menu,
   close,
   css,
+  canva,
+  itchio,
+  insta,
+  roboflow,
   figma,
   git,
   html,

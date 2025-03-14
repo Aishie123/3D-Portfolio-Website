@@ -7,8 +7,13 @@ import {
   html,
   css,
   reactjs,
+  itchio,
+  insta,
   tailwind,
   git,
+  github,
+  canva,
+  roboflow,
   figma,
   threejs,
   flutter,
@@ -407,7 +412,13 @@ const projects = [
       },
     ],
     image: genderpay,
-    source_code_link: "https://tinyurl.com/DonesCaseStudy-GenderPayGap",
+    source_links: [
+      {
+        name: "figma",
+        icon: figma,
+        link: "https://tinyurl.com/DonesCaseStudy-GenderPayGap",
+      }
+    ],
   },
   {
     name: "Mapúa eTrack+",
@@ -416,26 +427,32 @@ const projects = [
       CSA facilitators at MMCM identify at-risk students through Blackboard \
       Learn integration. It provides real-time analytics and scheduled reports, \
       enabling timely interventions to improve student success and retention.",
-      tags: [
-        {
-          name: "figma",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "react",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "nodejs",
-          color: "blue-text-gradient",
-        }
-      ],
+    tags: [
+      {
+        name: "figma",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "react",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "blue-text-gradient",
+      }
+    ],
     image: etrack,
-    source_code_link: "https://www.canva.com/design/DAGVg8bmK5Y/r5EmmQawib2MHnliUvVhxA/view?utm_content=DAGVg8bmK5Y&utm_campaign=designshare&utm_medium=link&utm_source=viewer",
+    source_links: [
+      {
+        name: "canva",
+        icon: canva,
+        link: "https://www.canva.com/design/DAGVg8bmK5Y/r5EmmQawib2MHnliUvVhxA/view?utm_content=DAGVg8bmK5Y&utm_campaign=designshare&utm_medium=link&utm_source=viewer",
+      }
+    ],
   },
   {
     name: "CluckTrack: Manok Bisaya Monitor with Computer Vision and GSM Alert",
@@ -445,26 +462,37 @@ const projects = [
       for data storage, a Flutter app for monitoring, and a \
       SIM800C GSM module for SMS alerts on missing or inactive \
       chickens.",
-      tags: [
-        {
-          name: "flutter",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "firebase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "roboflow",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "opencv",
-          color: "blue-text-gradient",
-        }
-      ],
+    tags: [
+      {
+        name: "flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "roboflow",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "opencv",
+        color: "blue-text-gradient",
+      }
+    ],
     image: clucktrack,
-    source_code_link: "https://www.canva.com/design/DAGGhflP6kY/dvy4LGCyqlIjjMPUesal4Q/view?utm_content=DAGGhflP6kY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h75a66fe93d",
+    source_links: [
+      {
+        name: "canva",
+        icon: canva, 
+        link: "https://www.canva.com/design/DAGGhflP6kY/dvy4LGCyqlIjjMPUesal4Q/view?utm_content=DAGGhflP6kY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h75a66fe93d",
+      },
+      {
+        name: "roboflow",
+        icon: roboflow,
+        link: "https://universe.roboflow.com/clucktrack/manok-bisaya", // Replace with your actual Roboflow link
+      }
+    ],
   },
   {
     name: "Asia Kakehashi Project Philippines Website",
@@ -488,7 +516,13 @@ const projects = [
       },
     ],
     image: akp_web,
-    source_code_link: "https://github.com/Aishie123/AKP-PH",
+    source_links: [
+      {
+        name: "github",
+        icon: github,
+        link: "https://github.com/Aishie123/AKP-PH",
+      }
+    ],
   },
   {
     name: "Metanoia: Breaking Chains of Despair",
@@ -512,7 +546,13 @@ const projects = [
       },
     ],
     image: metanoia,
-    source_code_link: "https://aishie918.itch.io/metanoia",
+    source_links: [
+      {
+        name: "itch.io",
+        icon: itchio,
+        link: "https://aishie918.itch.io/metanoia",
+      }
+    ],
   },
   {
     name: "Pocket Forest (Prototype)",
@@ -535,7 +575,13 @@ const projects = [
       },
     ],
     image: pocketforest,
-    source_code_link: "https://bit.ly/PocketForestPrototype",
+    source_links: [
+      {
+        name: "figma",
+        icon: figma,
+        link: "https://bit.ly/PocketForestPrototype",
+      }
+    ],
   },
   {
     name: "Social Media Content",
@@ -557,7 +603,13 @@ const projects = [
       },
     ],
     image: socmed,
-    source_code_link: "https://instagram.com/asiakakehashiprojectph",
+    source_links: [
+      {
+        name: "instagram",
+        icon: insta,
+        link: "https://instagram.com/asiakakehashiprojectph",
+      }
+    ],
   },
   {
     name: "Employee Attendance Monitoring System",
@@ -580,7 +632,13 @@ const projects = [
       },
     ],
     image: employeetracker,
-    source_code_link: "https://github.com/Aishie123/Employee-Attendance-Monitoring-System",
+    source_links: [
+      {
+        name: "github",
+        icon: github,
+        link: "https://github.com/Aishie123/Employee-Attendance-Monitoring-System",
+      }
+    ],
   },
   {
     name: "3D Solar System Simulation",
@@ -601,7 +659,13 @@ const projects = [
       },
     ],
     image: solarsystem,
-    source_code_link: "https://aishie918.itch.io/solar-system-simulation",
+    source_links: [
+      {
+        name: "itch.io",
+        icon: itchio,
+        link: "https://aishie918.itch.io/solar-system-simulation",
+      }
+    ],
   },
   {
     name: "Baylo: A Barter Trading App for Dabawenyos (Prototype)",
@@ -623,7 +687,13 @@ const projects = [
       },
     ],
     image: baylo,
-    source_code_link: "https://github.com/Aishie123/Baylo",
+    source_links: [
+      {
+        name: "github",
+        icon: github,
+        link: "https://github.com/Aishie123/Baylo",
+      }
+    ],
   },
   {
     name: "Nozomi: A Turn-Based RPG",
@@ -645,7 +715,13 @@ const projects = [
       },
     ],
     image: nozomi,
-    source_code_link: "https://github.com/Aishie123/Nozomi",
+    source_links: [
+      {
+        name: "github",
+        icon: github,
+        link: "https://github.com/Aishie123/Nozomi",
+      }
+    ],
   },
   {
     name: "Smart Calculator",
@@ -668,7 +744,13 @@ const projects = [
       },
     ],
     image: calculator,
-    source_code_link: "https://github.com/Aishie123/Smart-Calculator",
+    source_links: [
+      {
+        name: "github",
+        icon: github,
+        link: "https://github.com/Aishie123/Smart-Calculator",
+      }
+    ],
   },
 ];
 

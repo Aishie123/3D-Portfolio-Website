@@ -7,7 +7,7 @@ import { github } from "../assets";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+const ProjectCard = ({ index, name, description, tags, image, source_links }) => {
   return (
     <motion.div
       variants={fadeIn("up", "spring", 0.5 * (index % 3), 1.5)}
@@ -30,12 +30,20 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
             alt="project_image"
             className="w-full h-full object-cover rounded-2xl"
           />
+          
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img src={github} alt="source code" className="w-1/2 h-1/2 object-contain" />
+            {/* Display multiple source links */}
+            <div className="flex flex-row gap-2">
+              {source_links && source_links.map((source, i) => (
+                <div
+                  key={`source-${i}`}
+                  onClick={() => window.open(source.link, "_blank")}
+                  className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                  title={source.name}
+                >
+                  <img src={source.icon} alt={source.name} className="w-1/2 h-1/2 object-contain" />
+                </div>
+              ))}
             </div>
           </div>
         </div>
