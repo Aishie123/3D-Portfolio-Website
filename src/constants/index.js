@@ -444,7 +444,7 @@ const projects = [
       Arduino Uno, and YOLOv8 for real-time tracking, Firebase\
       for data storage, a Flutter app for monitoring, and a \
       SIM800C GSM module for SMS alerts on missing or inactive \
-      chickens",
+      chickens.",
       tags: [
         {
           name: "flutter",
