@@ -53,6 +53,9 @@ import nocode from "./organization/nocode.png";
 import ssc from "./organization/ssc.png";
 import wtm from "./organization/wtm.png";
 
+import etrack from "./portfolio/etrack.gif";
+import clucktrack from "./portfolio/clucktrack.gif";
+import genderpay from "./portfolio/genderpay.png";
 import akp_web from "./portfolio/akp.png";
 import baylo from "./portfolio/baylo.png";
 import calculator from "./portfolio/calculator.JPEG";
@@ -111,6 +114,9 @@ export {
   nocode,
   ssc,
   wtm,
+  etrack,
+  clucktrack,
+  genderpay,
   akp_web,
   baylo,
   calculator,

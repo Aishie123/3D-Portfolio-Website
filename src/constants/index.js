@@ -40,6 +40,9 @@ import {
   nocode,
   ssc,
   wtm,
+  genderpay,
+  clucktrack,
+  etrack,
   akp_web,
   baylo,
   calculator,
@@ -383,6 +386,87 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Gender Pay Gap - Case Study",
+    description:
+      "This prototype is a Figma-based research poster \
+      that visually presents the gender pay gap in the Philippine tech \
+      industry. It includes key statistics, ethical considerations, and \
+      proposed solutions, designed for a clear and engaging presentation.",
+    tags: [
+      {
+        name: "ui-ux",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "figma",
+        color: "green-text-gradient",
+      },
+      {
+        name: "canva",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: genderpay,
+    source_code_link: "https://tinyurl.com/DonesCaseStudy-GenderPayGap",
+  },
+  {
+    name: "Mapúa eTrack+",
+    description:
+      "A student engagement monitoring system that helps \
+      CSA facilitators at MMCM identify at-risk students through Blackboard \
+      Learn integration. It provides real-time analytics and scheduled reports, \
+      enabling timely interventions to improve student success and retention.",
+      tags: [
+        {
+          name: "figma",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "react",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "nodejs",
+          color: "blue-text-gradient",
+        }
+      ],
+    image: etrack,
+    source_code_link: "https://www.canva.com/design/DAGVg8bmK5Y/r5EmmQawib2MHnliUvVhxA/view?utm_content=DAGVg8bmK5Y&utm_campaign=designshare&utm_medium=link&utm_source=viewer",
+  },
+  {
+    name: "CluckTrack: Manok Bisaya Monitor with Computer Vision and GSM Alert",
+    description:
+      "A smart poultry monitoring system using ESP32-CAM, \
+      Arduino Uno, and YOLOv8 for real-time tracking, Firebase\
+      for data storage, a Flutter app for monitoring, and a \
+      SIM800C GSM module for SMS alerts on missing or inactive \
+      chickens",
+      tags: [
+        {
+          name: "flutter",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "firebase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "roboflow",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "opencv",
+          color: "blue-text-gradient",
+        }
+      ],
+    image: clucktrack,
+    source_code_link: "https://www.canva.com/design/DAGGhflP6kY/dvy4LGCyqlIjjMPUesal4Q/view?utm_content=DAGGhflP6kY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h75a66fe93d",
+  },
+  {
     name: "Asia Kakehashi Project Philippines Website",
     description:
       "A concept website developed for Asia Kakehashi Project Philippines. \
@@ -404,7 +488,7 @@ const projects = [
       },
     ],
     image: akp_web,
-    source_code_link: "https://aishie123.github.io/AKP-PH",
+    source_code_link: "https://github.com/Aishie123/AKP-PH",
   },
   {
     name: "Metanoia: Breaking Chains of Despair",
